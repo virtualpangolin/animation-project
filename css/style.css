@@ -1,0 +1,1568 @@
+/* -- fire -- */
+/* -- water -- */
+/* -- plant -- */
+* {
+  font-family: "Indie Flower", cursive;
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/* -- wrapper -- */
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+/* -- salamoche all animations -- */
+.img-squirtle {
+  width: 250px;
+  height: 250px;
+  animation: squirtle 11s ease 7.8s 1 normal forwards;
+  transform: scale(0);
+}
+
+@keyframes squirtle {
+  0% {
+    transform: scale(0) translateX(0);
+  }
+  5% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1) translateX(0);
+  }
+  45% {
+    transform: scale(1) translateX(-50px) rotate(-15deg);
+  }
+  50% {
+    transform: scale(1) translateX(-100px) rotate(12deg);
+  }
+  55% {
+    transform: scale(1) translateX(-140px) rotate(-13deg);
+  }
+  60% {
+    transform: scale(1) translateX(-190px) rotate(12deg);
+  }
+  65% {
+    transform: scale(1) translateX(-230px) rotate(-13deg);
+  }
+  70% {
+    transform: scale(1) translateX(-280px) rotate(12deg);
+  }
+  75% {
+    transform: scale(1) translateX(-310px) rotate(-15deg);
+  }
+  80% {
+    transform: scale(1) translateX(-350px) rotate(15deg);
+  }
+  83% {
+    transform: scale(1) translateX(-350px) rotate(0deg);
+  }
+  90% {
+    transform: scale(1) translateX(-350px);
+  }
+  100% {
+    transform: scale(1) translateX(-350px);
+  }
+}
+.img-bulbasaur {
+  width: 250px;
+  height: 250px;
+  animation: bulbasaur 11s ease 7.8s 1 normal forwards;
+  transform: scale(0);
+}
+
+@keyframes bulbasaur {
+  0% {
+    transform: scale(0) translateX(0);
+  }
+  5% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1) translateX(0);
+  }
+  45% {
+    transform: scale(1) translateX(-50px) rotate(-15deg);
+  }
+  50% {
+    transform: scale(1) translateX(-100px) rotate(12deg);
+  }
+  55% {
+    transform: scale(1) translateX(-140px) rotate(-13deg);
+  }
+  60% {
+    transform: scale(1) translateX(-190px) rotate(12deg);
+  }
+  65% {
+    transform: scale(1) translateX(-230px) rotate(-13deg);
+  }
+  70% {
+    transform: scale(1) translateX(-280px) rotate(12deg);
+  }
+  75% {
+    transform: scale(1) translateX(-310px) rotate(-15deg);
+  }
+  80% {
+    transform: scale(1) translateX(-350px) rotate(15deg);
+  }
+  83% {
+    transform: scale(1) translateX(-350px) rotate(0deg);
+  }
+  90% {
+    transform: scale(1) translateX(-350px);
+  }
+  100% {
+    transform: scale(1) translateX(-350px);
+  }
+}
+/*@keyframes pokeball {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}*/
+/* -- Pokeball + wobble animation -- */
+@keyframes pokeball {
+  0% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  5% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  10% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  15% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  20% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  25% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+  33% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  38% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  43% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  48% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  53% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  58% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+  66% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  71% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  76% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  81% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  87% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  92% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+  95% {
+    transform: translateY(-60px) scale(0.25);
+    opacity: 1;
+  }
+  96% {
+    transform: translateY(-60px) scale(0.2);
+    opacity: 0.9;
+  }
+  97% {
+    transform: translateY(-60px) scale(0.15);
+    opacity: 0.8;
+  }
+  98% {
+    transform: translateY(-60px) scale(0.1);
+    opacity: 0.4;
+  }
+  99% {
+    transform: translateY(-60px) scale(0.05);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-60px) translateX(0%) scale(0);
+    transform-origin: 50% 50%;
+    opacity: 0;
+  }
+}
+.pokeball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  animation: pokeball 5s ease 3s 1 normal forwards;
+  /*animation: pokeball 2s ease 3s infinite normal none;*/
+  position: absolute;
+  bottom: 0;
+}
+
+.pokeball__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 150px 150px 0 0;
+}
+
+.pokeball__middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  height: 13px;
+}
+
+.pokeball__middle-black {
+  background: #000;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.pokeball__middle-white {
+  background: #fff;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.pokeball__middle-grey {
+  background: #c9c9c9;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+}
+
+.pokeball__middle-center {
+  background: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.pokeball__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 0 0 150px 150px;
+}
+
+/* -- salamoche all animations -- */
+.img-salamoche {
+  width: 250px;
+  height: 250px;
+  animation: salamoche 11s ease 7.8s 1 normal forwards, salamoche2 1.5s ease 19s 1 normal forwards;
+  transform: scale(0);
+}
+
+@keyframes salamoche {
+  0% {
+    transform: scale(0) translateX(0);
+  }
+  5% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1) translateX(0);
+  }
+  45% {
+    transform: scale(1) translateX(-50px) rotate(-15deg);
+  }
+  50% {
+    transform: scale(1) translateX(-100px) rotate(12deg);
+  }
+  55% {
+    transform: scale(1) translateX(-140px) rotate(-13deg);
+  }
+  60% {
+    transform: scale(1) translateX(-190px) rotate(12deg);
+  }
+  65% {
+    transform: scale(1) translateX(-230px) rotate(-13deg);
+  }
+  70% {
+    transform: scale(1) translateX(-280px) rotate(12deg);
+  }
+  75% {
+    transform: scale(1) translateX(-310px) rotate(-15deg);
+  }
+  80% {
+    transform: scale(1) translateX(-350px) rotate(15deg);
+  }
+  83% {
+    transform: scale(1) translateX(-350px) rotate(0deg);
+  }
+  90% {
+    transform: scale(1) translateX(-350px);
+  }
+  100% {
+    transform: scale(1) translateX(-350px);
+  }
+}
+@keyframes salamoche2 {
+  0% {
+    transform: scale(1) rotate(0deg) translateX(-350px);
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+  }
+  100% {
+    transform: scale(0) rotate(1800deg) translateX(-350px);
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+  }
+}
+/* -- A wild pokemon appears ! -- */
+h3 span {
+  opacity: 0;
+}
+
+.letter01 {
+  animation: letters 1s ease 8000ms forwards;
+}
+
+.letter02 {
+  animation: letters 1s ease 8050ms forwards;
+}
+
+.letter04 {
+  animation: letters 1s ease 8150ms forwards;
+}
+
+.letter05 {
+  animation: letters 1s ease 8200ms forwards;
+}
+
+.letter06 {
+  animation: letters 1s ease 8250ms forwards;
+}
+
+.letter07 {
+  animation: letters 1s ease 8300ms forwards;
+}
+
+.letter08 {
+  animation: letters 1s ease 8350ms forwards;
+}
+
+.letter09 {
+  animation: letters 1s ease 8400ms forwards;
+}
+
+.letter10 {
+  animation: letters 1s ease 8450ms forwards;
+}
+
+.letter12 {
+  animation: letters 1s ease 8550ms forwards;
+}
+
+.letter13 {
+  animation: letters 1s ease 8600ms forwards;
+}
+
+.letter14 {
+  animation: letters 1s ease 8650ms forwards;
+}
+
+.letter15 {
+  animation: letters 1s ease 8700ms forwards;
+}
+
+.letter16 {
+  animation: letters 1s ease 8750ms forwards;
+}
+
+.letter17 {
+  animation: letters 1s ease 8800ms forwards;
+}
+
+.letter18 {
+  animation: letters 1s ease 8850ms forwards;
+}
+
+.letter20 {
+  animation: letters 1s ease 8950ms forwards;
+}
+
+.letter21 {
+  animation: letters 1s ease 9000ms forwards;
+}
+
+.letter22 {
+  animation: letters 1s ease 9050ms forwards;
+}
+
+.letter23 {
+  animation: letters 1s ease 9100ms forwards;
+}
+
+.letter24 {
+  animation: letters 1s ease 9150ms forwards;
+}
+
+.letter25 {
+  animation: letters 1s ease 9200ms forwards;
+}
+
+.letter26 {
+  animation: letters 1s ease 9250ms forwards;
+}
+
+.letter27 {
+  animation: letters 1s ease 9300ms forwards;
+}
+
+.letter28 {
+  animation: letters 1s ease 9350ms forwards;
+}
+
+@keyframes letters {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* -- text of wild pokemon appears dissapears -- */
+.letter-appear {
+  animation: wild-text-dissapear 500ms ease 11s 1 normal forwards;
+  transform: scale(1);
+}
+
+@keyframes wild-text-dissapear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+/* -- Sacha appears / dissapears ! -- */
+.img-sacha {
+  width: 250px;
+  height: 250px;
+  animation: sacha 1s ease 9.5s 1 normal forwards, sacha2 2s ease 26s 1 normal forwards;
+  transform: translateX(1000px);
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+}
+
+@keyframes sacha {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes sacha2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
+}
+/* -- Sacha talking 1 -- */
+.sacha-text-container {
+  border: 2px solid #c9c9c9;
+  border-radius: 50px 50px 80px 10px;
+  width: 230px;
+  height: 120px;
+  padding: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  overflow: hidden;
+  animation: sacha-text 4s ease 10s 1 normal forwards;
+  transform: translateY(1000px);
+}
+
+@keyframes sacha-text {
+  0% {
+    transform: translateY(1000px);
+  }
+  15% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1000px);
+  }
+}
+.sacha-text {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+/* -- Salameche talking 1 -- */
+.salameche-text-container {
+  border: 2px solid #c9c9c9;
+  border-radius: 50px 50px 10px 80px;
+  width: 230px;
+  height: 120px;
+  padding: 20px;
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  overflow: hidden;
+  animation: salameche-text 4s ease 11.5s 1 normal forwards;
+  transform: translateY(-1000px);
+}
+
+@keyframes salameche-text {
+  0% {
+    transform: translateY(1000px);
+  }
+  15% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1000px);
+  }
+}
+.salameche-text {
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+/* -- Sacha throws pokeball -- */
+.pokeball2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  animation: pokeball2 5s ease 14s 1 normal forwards, pokeball3 5s ease 20s 1 normal forwards;
+  position: absolute;
+  right: 150px;
+  bottom: 50px;
+  transform: scale(0);
+}
+
+@keyframes pokeball2 {
+  0% {
+    transform: scale(0) translateX(0) translateY(0);
+  }
+  9% {
+    transform: scale(0) translateX(0);
+  }
+  10% {
+    transform: scale(1) translateX(0);
+  }
+  15% {
+    transform: scale(1) translateX(-500) translateY(0) rotate(0deg);
+  }
+  45% {
+    transform: scale(1) translateY(0);
+  }
+  74% {
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: scale(1) translateY(0);
+  }
+  87% {
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+  92% {
+    transform: scale(1) translateY(-80px);
+  }
+  100% {
+    transform: scale(1) translateX(-800px) translateY(0) rotate(3960deg);
+  }
+}
+@keyframes pokeball3 {
+  0% {
+    transform: translateX(-800px);
+    transform-origin: 50% 50%;
+  }
+  5% {
+    transform: translateX(-830px) rotate(-6deg);
+  }
+  10% {
+    transform: translateX(-875px) rotate(6deg);
+  }
+  15% {
+    transform: translateX(-845px) rotate(-3.6deg);
+  }
+  20% {
+    transform: translateX(-869px) rotate(2.4deg);
+  }
+  25% {
+    transform: translateX(-854px) rotate(-1.2deg);
+  }
+  33% {
+    transform: translateX(-800px);
+    transform-origin: 50% 50%;
+  }
+  38% {
+    transform: translateX(-830px) rotate(-6deg);
+  }
+  43% {
+    transform: translateX(-875px) rotate(6deg);
+  }
+  48% {
+    transform: translateX(-845px) rotate(-3.6deg);
+  }
+  53% {
+    transform: translateX(-869px) rotate(2.4deg);
+  }
+  58% {
+    transform: translateX(-854px) rotate(-1.2deg);
+  }
+  66% {
+    transform: translateX(-800px);
+    transform-origin: 50% 50%;
+  }
+  71% {
+    transform: translateX(-830px) rotate(-6deg);
+  }
+  76% {
+    transform: translateX(-875px) rotate(6deg);
+  }
+  81% {
+    transform: translateX(-845px) rotate(-3.6deg);
+  }
+  87% {
+    transform: translateX(-869px) rotate(2.4deg);
+  }
+  92% {
+    transform: translateX(-854px) rotate(-1.2deg);
+  }
+  95% {
+    transform: translateY(-60px) scale(0.25);
+    opacity: 1;
+  }
+  96% {
+    transform: translateY(-60px) scale(0.2);
+    opacity: 0.9;
+  }
+  97% {
+    transform: translateY(-60px) scale(0.15);
+    opacity: 0.8;
+  }
+  98% {
+    transform: translateY(-60px) scale(0.1);
+    opacity: 0.4;
+  }
+  99% {
+    transform: translateY(-60px) scale(0.05);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-60px) translateX(0%) scale(0);
+    transform-origin: 50% 50%;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+  }
+}
+.pokeball__top2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 150px 150px 0 0;
+}
+
+.pokeball__middle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  height: 13px;
+}
+
+.pokeball__middle-black2 {
+  background: #000;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.pokeball__middle-white2 {
+  background: #fff;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.pokeball__middle-grey2 {
+  background: #c9c9c9;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+}
+
+.pokeball__middle-center2 {
+  background: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.pokeball__bottom2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 0 0 150px 150px;
+}
+
+/* -- Sacha talking part 2-- */
+.sacha-text-container2 {
+  border: 2px solid #c9c9c9;
+  border-radius: 50px 50px 80px 10px;
+  width: 230px;
+  height: 120px;
+  padding: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  overflow: hidden;
+  animation: sacha-text2 5s ease 13.5s 1 normal forwards;
+  transform: translateX(1000px);
+}
+
+@keyframes sacha-text2 {
+  0% {
+    transform: translateX(1000px);
+  }
+  15% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
+}
+.sacha-text2 {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+/* -- Salameche talking part 2-- */
+.salameche-text-container2 {
+  border: 2px solid #c9c9c9;
+  border-radius: 50px 50px 10px 80px;
+  width: 180px;
+  height: 80px;
+  padding: 20px;
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  overflow: hidden;
+  animation: salameche-text2 3.5s ease 15s 1 normal forwards;
+  transform: translateX(-1000px);
+}
+
+@keyframes salameche-text2 {
+  0% {
+    transform: translateX(-1000px);
+  }
+  15% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+.salameche-text2 {
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+
+/* -- Sacha says GOTCHA ! -- */
+.sacha-text-container3 {
+  border: 2px solid #c9c9c9;
+  border-radius: 50px 50px 80px 10px;
+  width: 230px;
+  height: 120px;
+  padding: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  overflow: hidden;
+  animation: sacha-text3 1.5s ease 24.5s 1 normal forwards;
+  transform: translateY(1000px);
+}
+
+@keyframes sacha-text3 {
+  0% {
+    transform: translateY(-1000px);
+  }
+  15% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1000px);
+  }
+}
+.sacha-text3 {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.footer {
+  background-color: #3b3b3b;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  padding-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+}
+.footer__title {
+  margin-bottom: 16px;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2.5em;
+  background: -webkit-linear-gradient(#571c4d, #9e2155, #cc1b41, #ff5e00, #ffc400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer__list {
+  padding-top: 7px;
+}
+.footer__link {
+  color: #fff;
+}
+
+ul {
+  display: flex;
+}
+
+header {
+  background-image: url("https://cdn.wallpapersafari.com/27/37/QXSf9a.jpg");
+  box-shadow: inset 1px 7px 8px -5px #6b6b6b;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  animation: header-height 2000ms ease 3s 1 normal forwards;
+}
+
+@keyframes header-height {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+    padding-bottom: 30px;
+  }
+  70% {
+    transform: scale(1);
+    padding-bottom: 520px;
+  }
+  80% {
+    transform: scale(1);
+    padding-bottom: 330px;
+  }
+  88% {
+    transform: scale(1);
+    padding-bottom: 440px;
+  }
+  94% {
+    transform: scale(1);
+    padding-bottom: 380px;
+  }
+  100% {
+    transform: scale(1);
+    padding-bottom: 400px;
+  }
+}
+.logo {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 3em;
+  background: -webkit-linear-gradient(360deg, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  animation: logo-anim 2.5s ease-in-out 1s 1 normal forwards, rainbow 1200ms ease-in-out 3.3s infinite normal forwards;
+  transform: scale(0);
+}
+
+/* -- logo all animations -- */
+@keyframes logo-anim {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(0);
+  }
+  83% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.6);
+  }
+  93% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes rainbow {
+  0%, 100% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  7% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  14% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  21% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  28% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  35% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  42% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  49% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  56% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  63% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  70% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  77% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  84% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  91% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes poke-hover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* -- nav -- */
+.poke-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+.poke-list__name {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.poke-list--color1::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: -webkit-linear-gradient(360deg, #571c4d, #9e2155, #cc1b41, #ff5e00, #ffc400);
+  transition: ease-out 0.3s;
+}
+
+.poke-list--color1:hover::after {
+  width: 100%;
+}
+
+.poke-list--color2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: -webkit-linear-gradient(360deg, #162263, #122bb5, #0e7ae6, #07aef5, #03f7ff);
+  transition: ease-out 0.3s;
+}
+
+.poke-list--color3:hover::after {
+  width: 100%;
+}
+
+.poke-list--color3::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: -webkit-linear-gradient(360deg, #1b4014, #2d6e22, #38a125, #23ba23, #00ff00);
+  transition: ease-out 0.3s;
+}
+
+.poke-list--color2:hover::after {
+  width: 100%;
+}
+
+.poke-list--color1 {
+  background: -webkit-linear-gradient(360deg, #571c4d, #9e2155, #cc1b41, #ff5e00, #ffc400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.poke-list--color2 {
+  background: -webkit-linear-gradient(360deg, #162263, #122bb5, #0e7ae6, #07aef5, #03f7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.poke-list--color3 {
+  background: -webkit-linear-gradient(360deg, #1b4014, #2d6e22, #38a125, #23ba23, #00ff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* -- nav appearance animation -- */
+.anim-1 {
+  animation: anim1 500ms 3000ms forwards;
+  transform: scale(0);
+}
+
+@keyframes anim1 {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.anim-2 {
+  animation: anim2 500ms 3200ms forwards;
+  transform: scale(0);
+}
+
+@keyframes anim2 {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.anim-3 {
+  animation: anim3 500ms 3400ms forwards;
+  transform: scale(0);
+}
+
+@keyframes anim3 {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* -- pikachu appearance -- */
+.img-pikachu {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  animation: anim-pika 800ms ease-in-out 4.7s 1 normal forwards;
+  transform: translateX(-1000px);
+}
+
+@keyframes anim-pika {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* -- anime girl appearance -- */
+.img-anime-girl {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  animation: anim-girl 800ms ease-in-out 4.5s 1 normal forwards;
+  transform: translateX(1000px);
+}
+
+@keyframes anim-girl {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* -- diglett appearance -- */
+.img-diglett {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 600px;
+  animation: diglett 700ms linear 5.5s 1 normal forwards;
+  transform: translateY(200px);
+}
+
+@keyframes diglett {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+/* -- anime girl text -- */
+.anime-text-container {
+  position: absolute;
+  top: 150px;
+  right: 400px;
+  animation: anime-hello 2000ms ease-in-out 4.5s 1 normal forwards;
+  transform: scale(0);
+}
+
+.anime-text {
+  font-size: 2em;
+  font-weight: bold;
+  background: -webkit-linear-gradient(360deg, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes anime-hello {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* -- pimkachu text -- */
+.pikachu-text-container {
+  position: absolute;
+  top: 200px;
+  left: -50px;
+  animation: pikachu 2000ms ease-in-out 5s 1 normal forwards, pika-text 300ms ease-in-out 1s infinite normal forwards;
+  transform: scale(0);
+}
+
+.pikachu-text {
+  font-size: 3em;
+  font-weight: bold;
+  background: -webkit-linear-gradient(360deg, #c71e70, red, #ff5e00, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes pikachu {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  animation: loaded 3s forwards;
+}
+
+@keyframes loaded {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  99% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+/* -- main -- */
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("https://cdn.wallpapersafari.com/27/37/QXSf9a.jpg");
+  width: 100%;
+  max-width: 1250px;
+  height: 380px;
+  border-radius: 25px;
+  flex-direction: column;
+  box-shadow: inset 1px 7px 8px -5px #6b6b6b;
+  position: relative;
+  margin-right: 50px;
+  margin-left: 50px;
+  overflow: hidden;
+}
+
+.parallax1 {
+  background: url("https://i.imgur.com/z4Gbshc.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.para-opacity1 {
+  background-image: url("https://wallpapercave.com/wp/wp3728849.jpg");
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#top {
+  height: 500px;
+  width: 100%;
+  background: -webkit-linear-gradient(360deg, #571c4d, #9e2155, #cc1b41, #ff5e00, #ffc400);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.poke-name1 {
+  background: -webkit-linear-gradient(360deg, #571c4d, #9e2155, #cc1b41, #ff5e00, #ffc400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 15px;
+  cursor: pointer;
+}
+.poke-name1:hover {
+  animation: poke-hover 500ms forwards;
+}
+
+.parallax2 {
+  background: url("https://i.imgur.com/ZqKfscs.jpeg");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.para-opacity2 {
+  background-image: url("https://wallpapercave.com/wp/wp3728849.jpg");
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#middle {
+  height: 500px;
+  width: 100%;
+  background: -webkit-linear-gradient(360deg, #03f7ff, #07aef5, #0e7ae6, #122bb5, #162263);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.poke-name2 {
+  background: -webkit-linear-gradient(360deg, #03f7ff, #07aef5, #0e7ae6, #122bb5, #162263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 15px;
+  cursor: pointer;
+}
+.poke-name2:hover {
+  animation: poke-hover 500ms forwards;
+}
+
+.parallax3 {
+  background: url("https://wallpaperaccess.com/full/4886875.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.para-opacity3 {
+  background-image: url("https://wallpapercave.com/wp/wp3728849.jpg");
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#bottom {
+  height: 500px;
+  width: 100%;
+  background: -webkit-linear-gradient(360deg, #1b4014, #2d6e22, #38a125, #23ba23, #00ff00);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.poke-name3 {
+  background: -webkit-linear-gradient(360deg, #1b4014, #2d6e22, #38a125, #23ba23, #00ff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 15px;
+  cursor: pointer;
+}
+.poke-name3:hover {
+  animation: poke-hover 500ms forwards;
+}
+
+.parallax4 {
+  background: url("https://i.3djuegos.com/juegos/15012/pok_mon_rpg__switch_/fotos/maestras/pok_mon_rpg__switch_-4729095.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.para-opacity4 {
+  background-image: url("https://wallpapercave.com/wp/wp3728849.jpg");
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

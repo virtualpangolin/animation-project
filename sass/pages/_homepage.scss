@@ -1,0 +1,142 @@
+
+/* -- main -- */
+
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("https://cdn.wallpapersafari.com/27/37/QXSf9a.jpg");
+    width: 100%;
+    max-width: 1250px;
+    height: 380px;
+    border-radius: 25px;
+    flex-direction: column;
+    box-shadow: inset 1px 7px 8px -5px rgb(107, 107, 107);
+    position: relative;
+    margin-right: 50px;
+    margin-left: 50px;
+    overflow: hidden;
+}
+.parallax1{
+    background: url("https://i.imgur.com/z4Gbshc.jpg");
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.para-opacity1{
+    background-image: url("https://wallpapercave.com/wp/wp3728849.jpg");
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#top{
+    height: 500px;
+    width: 100%;
+    background: -webkit-linear-gradient(360deg, $color-purple, $color-dark-red, $color-red, $color-orange, $color-yellow);
+    @include flex-center;
+    flex-direction: column;
+}
+.poke-name1{
+    background: -webkit-linear-gradient(360deg, $color-purple, $color-dark-red, $color-red, $color-orange, $color-yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 15px;
+    cursor: pointer;
+    &:hover{
+        animation: poke-hover 500ms forwards;
+    }
+}
+.parallax2{
+    background: url("https://i.imgur.com/ZqKfscs.jpeg");
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.para-opacity2{
+    background-image: url("https://wallpapercave.com/wp/wp3728849.jpg");
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#middle{
+    height: 500px;
+    width: 100%;
+    background: -webkit-linear-gradient(360deg, $color-lightest-blue, $color-light-blue, $color-blue, $color-dark-blue, $color-darkest-blue);
+    @include flex-center;
+    flex-direction: column;
+}
+.poke-name2{
+    background: -webkit-linear-gradient(360deg, $color-lightest-blue, $color-light-blue, $color-blue, $color-dark-blue, $color-darkest-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 15px;
+    cursor: pointer;
+    &:hover{
+        animation: poke-hover 500ms forwards;
+    }
+}
+.parallax3{
+    background: url("https://wallpaperaccess.com/full/4886875.jpg");
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.para-opacity3{
+    background-image: url("https://wallpapercave.com/wp/wp3728849.jpg");
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#bottom{
+    height: 500px;
+    width: 100%;
+    background: -webkit-linear-gradient(360deg, $color-darkest-green, $color-dark-green, $color-green, $color-light-green, $color-lightest-green);
+    @include flex-center;
+    flex-direction: column;
+}
+.poke-name3{
+    background: -webkit-linear-gradient(360deg, $color-darkest-green, $color-dark-green, $color-green, $color-light-green, $color-lightest-green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 15px;
+    cursor: pointer;
+    &:hover{
+        animation: poke-hover 500ms forwards;
+    }
+}
+.parallax4{
+    background: url("https://i.3djuegos.com/juegos/15012/pok_mon_rpg__switch_/fotos/maestras/pok_mon_rpg__switch_-4729095.jpg");
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.para-opacity4{
+    background-image: url("https://wallpapercave.com/wp/wp3728849.jpg");
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

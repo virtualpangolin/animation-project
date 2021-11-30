@@ -1,0 +1,19 @@
+{
+  "name": "la-rhune",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virtualpangolin/La-Rhune.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/virtualpangolin/La-Rhune/issues"
+  },
+  "homepage": "https://github.com/virtualpangolin/La-Rhune#readme"
+}

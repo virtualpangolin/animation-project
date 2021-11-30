@@ -1,0 +1,27 @@
+.footer{
+    background-color: #3b3b3b;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    padding-left: 25px;
+    @include flex-center;
+    flex-direction: column;
+    height: 250px;
+        &__title{
+        margin-bottom: 16px;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 2.5em;
+        background: -webkit-linear-gradient($color-purple, $color-dark-red, $color-red, $color-orange, $color-yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+        &__list{
+            padding-top: 7px;
+        }
+        &__link{
+            color: #fff;
+        }
+    }
+
+    ul{
+        display: flex;
+    }

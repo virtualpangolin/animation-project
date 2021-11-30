@@ -1,0 +1,438 @@
+header{
+    background-image: url("https://cdn.wallpapersafari.com/27/37/QXSf9a.jpg");
+    box-shadow: inset 1px 7px 8px -5px rgb(107, 107, 107);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    animation: header-height 2000ms ease 3s 1 normal forwards;
+}
+@keyframes header-height{
+    0%{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1);
+        padding-bottom: 30px;
+    }
+    70% {
+        transform: scale(1);
+        padding-bottom: 520px;
+    }
+    80% {
+        transform: scale(1);
+        padding-bottom: 330px;
+    }
+    88% {
+        transform: scale(1);
+        padding-bottom: 440px;
+    }
+    94% {
+        transform: scale(1);
+        padding-bottom: 380px;
+    }
+    100% {
+        transform: scale(1);
+        padding-bottom: 400px;
+    }
+}
+
+.logo{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3em;
+    background: -webkit-linear-gradient(360deg, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    animation: logo-anim 2.5s ease-in-out 1s 1 normal forwards, rainbow 1200ms ease-in-out 3.3s infinite normal forwards,;
+    transform: scale(0);
+}
+
+
+/* -- logo all animations -- */
+
+@keyframes logo-anim{
+    0%{
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(0);
+      }
+    83% {
+        transform: scale(0);
+      }
+    90% {
+        transform:scale(1.6);
+    }
+    93% {
+        transform:scale(0.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rainbow {
+    0%,
+    100%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    7%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    14%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    21%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    28%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    35%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    42%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    49%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    56%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow, #7ccc04);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    63%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000, yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    70%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange, #ffd000);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    77%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00, orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    84%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red, #ff5e00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    91%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70, red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@keyframes poke-hover {
+    0%{
+        transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* -- nav -- */
+
+.poke-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    &__name{
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+}
+.poke-list--color1::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: -webkit-linear-gradient(360deg, $color-purple, $color-dark-red, $color-red, $color-orange, $color-yellow);
+    transition: ease-out .3s;
+}
+.poke-list--color1:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+.poke-list--color2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: -webkit-linear-gradient(360deg, $color-darkest-blue, $color-dark-blue, $color-blue, $color-light-blue, $color-lightest-blue);
+    transition: ease-out .3s;
+}
+.poke-list--color3:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+.poke-list--color3::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: -webkit-linear-gradient(360deg, $color-darkest-green, $color-dark-green, $color-green, $color-light-green, $color-lightest-green);
+    transition: ease-out .3s;
+}
+.poke-list--color2:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+.poke-list--color1{
+    background: -webkit-linear-gradient(360deg, $color-purple, $color-dark-red, $color-red, $color-orange, $color-yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.poke-list--color2{
+    background: -webkit-linear-gradient(360deg, $color-darkest-blue, $color-dark-blue, $color-blue, $color-light-blue, $color-lightest-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.poke-list--color3{
+    background: -webkit-linear-gradient(360deg, $color-darkest-green, $color-dark-green, $color-green, $color-light-green, $color-lightest-green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* -- nav appearance animation -- */
+
+.anim-1 {
+    animation: anim1 500ms 3000ms forwards;
+    transform: scale(0);
+}
+@keyframes anim1{
+    0% {
+        transform: scale(0);
+    }
+    70% {
+        transform: scale(0);
+    }
+    75% {
+        transform: scale(1);
+    }
+    85% {
+        transform: scale(1.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.anim-2 {
+    animation: anim2 500ms 3200ms forwards;
+    transform: scale(0);
+}
+@keyframes anim2{
+    0% {
+        transform: scale(0);
+    }
+    70% {
+        transform: scale(0);
+    }
+    75% {
+        transform: scale(1);
+    }
+    85% {
+        transform: scale(1.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.anim-3 {
+    animation: anim3 500ms 3400ms forwards;
+    transform: scale(0);
+}
+@keyframes anim3{
+    0% {
+        transform: scale(0);
+    }
+    70% {
+        transform: scale(0);
+    }
+    75% {
+        transform: scale(1);
+    }
+    85% {
+        transform: scale(1.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* -- pikachu appearance -- */
+
+.img-pikachu{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    animation: anim-pika 800ms ease-in-out 4.7s 1 normal forwards;
+    transform: translateX(-1000px);
+}
+@keyframes anim-pika {
+    0% {
+      transform: translateX(-1000px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+/* -- anime girl appearance -- */
+
+.img-anime-girl{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    animation: anim-girl 800ms ease-in-out 4.5s 1 normal forwards;
+    transform: translateX(1000px);
+}
+@keyframes anim-girl {
+    0% {
+      transform: translateX(1000px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+/* -- diglett appearance -- */
+
+.img-diglett{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 600px;
+    animation: diglett 700ms linear 5.5s 1 normal forwards;
+    transform: translateY(200px);
+}
+@keyframes diglett {
+    0% {
+      transform: translateY(200px);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+}
+
+/* -- anime girl text -- */
+
+.anime-text-container{
+    position: absolute;
+    top: 150px;
+    right: 400px;
+    animation: anime-hello 2000ms ease-in-out 4.5s 1 normal forwards;
+    transform: scale(0);
+}
+.anime-text{
+    font-size: 2em;
+    font-weight: bold;
+    background: -webkit-linear-gradient(360deg, red, #ff5e00, orange, #ffd000, yellow, #7ccc04, green, #00bdb3, blue, #3403ad, indigo, #8e3e9e, violet, #c71e70);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes anime-hello{
+    0% {
+        transform: scale(0);
+    }
+    70% {
+        transform: scale(0);
+    }
+    75% {
+        transform: scale(1);
+    }
+    85% {
+        transform: scale(1.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* -- pimkachu text -- */
+
+.pikachu-text-container{
+    position: absolute;
+    top: 200px;
+    left: -50px;
+    animation: pikachu 2000ms ease-in-out 5s 1 normal forwards, pika-text 300ms ease-in-out 1s infinite normal forwards;
+    transform: scale(0);
+}
+.pikachu-text{
+    font-size: 3em;
+    font-weight: bold;
+    background: -webkit-linear-gradient(360deg, #c71e70, red, #ff5e00, orange,);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes pikachu{
+    0% {
+        transform: scale(0);
+    }
+    70% {
+        transform: scale(0);
+    }
+    75% {
+        transform: scale(1);
+    }
+    85% {
+        transform: scale(1.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,682 @@
+/*@keyframes pokeball {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}*/
+
+/* -- Pokeball + wobble animation -- */
+
+@keyframes pokeball {
+  0% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  5% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  10% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  15% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  20% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  25% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+  33% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  38% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  43% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  48% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  53% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  58% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+  66% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  71% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  76% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  81% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  87% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  92% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+  95% {
+    transform: translateY(-60px)scale(0.25);
+    opacity: 1;
+  }
+  96% {
+    transform: translateY(-60px) scale(0.2);
+    opacity: 0.9;
+  }
+  97% {
+    transform: translateY(-60px) scale(0.15);
+    opacity: 0.8;
+  }
+  98% {
+    transform: translateY(-60px) scale(0.1);
+    opacity: 0.4;
+  }
+  99% {
+    transform: translateY(-60px) scale(0.05);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-60px) translateX(0%) scale(0);
+    transform-origin: 50% 50%;
+    opacity: 0;
+  }
+}
+
+.pokeball{
+    @include flex-center;
+    flex-direction: column;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    animation: pokeball 5s ease 3s 1 normal forwards;
+    /*animation: pokeball 2s ease 3s infinite normal none;*/
+    position: absolute;
+    bottom: 0;
+}
+
+.pokeball__top{
+    @include flex-center;
+    background: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 150px 150px 0 0;
+}
+.pokeball__middle{
+    @include flex-center;
+    background: #000;
+    height: 13px;
+}
+.pokeball__middle-black{
+    background: #000;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    position: absolute;
+}
+.pokeball__middle-white{
+    background: #fff;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    position: absolute;
+}
+.pokeball__middle-grey{
+    background: #c9c9c9;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+}
+.pokeball__middle-center{
+    background: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+}
+.pokeball__bottom{
+    @include flex-center;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 0 150px 150px;
+}
+
+/* -- salamoche all animations -- */
+
+.img-salamoche{
+  width: 250px;
+  height: 250px;
+  animation: salamoche 11s ease 7.8s 1 normal forwards, salamoche2 1.5s ease 19s 1 normal forwards;
+  transform: scale(0);
+}
+@keyframes salamoche {
+  0% {
+    transform: scale(0) translateX(0);
+  }
+  5% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1)  translateX(0);
+  }
+  45% {
+    transform: scale(1) translateX(-50px) rotate(-15deg);
+  }
+  50% {
+    transform: scale(1) translateX(-100px) rotate(12deg);
+  }
+  55% {
+    transform: scale(1) translateX(-140px) rotate(-13deg);
+  }
+  60% {
+    transform: scale(1) translateX(-190px) rotate(12deg);
+  }
+  65% {
+    transform: scale(1) translateX(-230px) rotate(-13deg);
+  }
+  70% {
+    transform: scale(1) translateX(-280px) rotate(12deg);
+  }
+  75% {
+    transform: scale(1) translateX(-310px) rotate(-15deg);
+  }
+  80% {
+    transform: scale(1) translateX(-350px) rotate(15deg);
+  }
+  83% {
+    transform: scale(1) translateX(-350px) rotate(0deg);
+  }
+  90% {
+    transform: scale(1) translateX(-350px);
+  }
+  100% {
+    transform: scale(1) translateX(-350px);
+  }
+}
+
+@keyframes salamoche2 {
+  0% {
+    transform: scale(1) rotate(0deg)  translateX(-350px);
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+  }
+  100% {
+    transform: scale(0) rotate(1800deg) translateX(-350px);
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+  }
+}
+
+/* -- A wild pokemon appears ! -- */
+
+h3 span {opacity: 0;}
+.letter01 {animation:letters 1s ease 8000ms forwards;}
+.letter02 {animation:letters 1s ease 8050ms forwards;}
+.letter03 {}
+.letter04 {animation:letters 1s ease 8150ms forwards;}
+.letter05 {animation:letters 1s ease 8200ms forwards;}
+.letter06 {animation:letters 1s ease 8250ms forwards;}
+.letter07 {animation:letters 1s ease 8300ms forwards;}
+.letter08 {animation:letters 1s ease 8350ms forwards;}
+.letter09 {animation:letters 1s ease 8400ms forwards;}
+.letter10 {animation:letters 1s ease 8450ms forwards;}
+.letter11 {}
+.letter12 {animation:letters 1s ease 8550ms forwards;}
+.letter13 {animation:letters 1s ease 8600ms forwards;}
+.letter14 {animation:letters 1s ease 8650ms forwards;}
+.letter15 {animation:letters 1s ease 8700ms forwards;}
+.letter16 {animation:letters 1s ease 8750ms forwards;}
+.letter17 {animation:letters 1s ease 8800ms forwards;}
+.letter18 {animation:letters 1s ease 8850ms forwards;}
+.letter19 {}
+.letter20 {animation:letters 1s ease 8950ms forwards;}
+.letter21 {animation:letters 1s ease 9000ms forwards;}
+.letter22 {animation:letters 1s ease 9050ms forwards;}
+.letter23 {animation:letters 1s ease 9100ms forwards;}
+.letter24 {animation:letters 1s ease 9150ms forwards;}
+.letter25 {animation:letters 1s ease 9200ms forwards;}
+.letter26 {animation:letters 1s ease 9250ms forwards;}
+.letter27 {animation:letters 1s ease 9300ms forwards;}
+.letter28 {animation:letters 1s ease 9350ms forwards;}
+
+@keyframes letters {
+	0% {
+    opacity:0;
+  }
+	100% {
+    opacity:1.0;
+  }
+}
+
+/* -- text of wild pokemon appears dissapears -- */
+
+.letter-appear{
+  animation: wild-text-dissapear 500ms ease 11s 1 normal forwards;
+  transform: scale(1);
+}
+@keyframes wild-text-dissapear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/* -- Sacha appears / dissapears ! -- */
+
+.img-sacha{
+  width: 250px;
+  height: 250px;
+  animation: sacha 1s ease 9.5s 1 normal forwards, sacha2 2s ease 26s 1 normal forwards;
+  transform: translateX(1000px);
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+}
+@keyframes sacha {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes sacha2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
+}
+/* -- Sacha talking 1 -- */
+
+.sacha-text-container{
+  border: 2px solid #c9c9c9;
+  border-radius: 50px 50px 80px 10px;
+  width: 230px;
+  height: 120px;
+  padding: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  overflow: hidden;
+  animation: sacha-text 4s ease 10s 1 normal forwards;
+  transform: translateY(1000px);
+}
+@keyframes sacha-text {
+  0% {
+    transform: translateY(1000px);
+  }
+  15% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1000px);
+  }
+}
+.sacha-text{
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+/* -- Salameche talking 1 -- */
+
+.salameche-text-container{
+  border: 2px solid #c9c9c9;
+  border-radius: 50px 50px 10px 80px;
+  width: 230px;
+  height: 120px;
+  padding: 20px;
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  overflow: hidden;
+  animation: salameche-text 4s ease 11.5s 1 normal forwards;
+  transform: translateY(-1000px);
+}
+@keyframes salameche-text {
+  0% {
+    transform: translateY(1000px);
+  }
+  15% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1000px);
+  }
+}
+.salameche-text{
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+/* -- Sacha throws pokeball -- */
+
+.pokeball2{
+  @include flex-center;
+  flex-direction: column;
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  animation: pokeball2 5s ease 14s 1 normal forwards, pokeball3 5s ease 20s 1 normal forwards;
+  position: absolute;
+  right: 150px;
+  bottom: 50px;
+  transform: scale(0);
+}
+
+@keyframes pokeball2 {
+  0% {
+    transform: scale(0) translateX(0) translateY(0) ;
+  }
+  9% {
+    transform: scale(0) translateX(0);
+  }
+  10% {
+    transform: scale(1) translateX(0);
+  }
+  15% {
+    transform: scale(1) translateX(-500) translateY(0) rotate(0deg);
+  }
+  45% {
+    transform: scale(1) translateY(0);
+  }
+  74% {
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: scale(1) translateY(0);
+  }
+  87% {
+    transform: scale(1) translateY(0)  rotate(0deg);
+  }
+  92% {
+    transform: scale(1) translateY(-80px);
+  }
+  100% {
+    transform: scale(1) translateX(-800px) translateY(0) rotate(3960deg);
+  }
+}
+
+@keyframes pokeball3 {
+  0% {
+    transform: translateX(-800px);
+    transform-origin: 50% 50%;
+  }
+  5% {
+    transform: translateX(-830px) rotate(-6deg);
+  }
+  10% {
+    transform: translateX(-875px) rotate(6deg);
+  }
+  15% {
+    transform: translateX(-845px) rotate(-3.6deg);
+  }
+  20% {
+    transform: translateX(-869px) rotate(2.4deg);
+  }
+  25% {
+    transform: translateX(-854px) rotate(-1.2deg);
+  }
+  33% {
+    transform: translateX(-800px);
+    transform-origin: 50% 50%;
+  }
+  38% {
+    transform: translateX(-830px) rotate(-6deg);
+  }
+  43% {
+    transform: translateX(-875px) rotate(6deg);
+  }
+  48% {
+    transform: translateX(-845px) rotate(-3.6deg);
+  }
+  53% {
+    transform: translateX(-869px) rotate(2.4deg);
+  }
+  58% {
+    transform: translateX(-854px) rotate(-1.2deg);
+  }
+  66% {
+    transform: translateX(-800px);
+    transform-origin: 50% 50%;
+  }
+  71% {
+    transform: translateX(-830px) rotate(-6deg);
+  }
+  76% {
+    transform: translateX(-875px) rotate(6deg);
+  }
+  81% {
+    transform: translateX(-845px) rotate(-3.6deg);
+  }
+  87% {
+    transform: translateX(-869px) rotate(2.4deg);
+  }
+  92% {
+    transform: translateX(-854px) rotate(-1.2deg);
+  }
+  95% {
+    transform: translateY(-60px)scale(0.25);
+    opacity: 1;
+  }
+  96% {
+    transform: translateY(-60px) scale(0.2);
+    opacity: 0.9;
+  }
+  97% {
+    transform: translateY(-60px) scale(0.15);
+    opacity: 0.8;
+  }
+  98% {
+    transform: translateY(-60px) scale(0.1);
+    opacity: 0.4;
+  }
+  99% {
+    transform: translateY(-60px) scale(0.05);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-60px) translateX(0%) scale(0);
+    transform-origin: 50% 50%;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.pokeball__top2{
+  @include flex-center;
+  background: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 150px 150px 0 0;
+}
+.pokeball__middle2{
+  @include flex-center;
+  background: #000;
+  height: 13px;
+}
+.pokeball__middle-black2{
+  background: #000;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  position: absolute;
+}
+.pokeball__middle-white2{
+  background: #fff;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  position: absolute;
+}
+.pokeball__middle-grey2{
+  background: #c9c9c9;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+}
+.pokeball__middle-center2{
+  background: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+}
+.pokeball__bottom2{
+  @include flex-center;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 0 0 150px 150px;
+}
+
+/* -- Sacha talking part 2-- */
+
+.sacha-text-container2{
+  border: 2px solid #c9c9c9;
+  border-radius: 50px 50px 80px 10px;
+  width: 230px;
+  height: 120px;
+  padding: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  overflow: hidden;
+  animation: sacha-text2 5s ease 13.5s 1 normal forwards;
+  transform: translateX(1000px);
+}
+@keyframes sacha-text2 {
+  0% {
+    transform: translateX(1000px);
+  }
+  15% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
+}
+.sacha-text2{
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+/* -- Salameche talking part 2-- */
+
+.salameche-text-container2{
+  border: 2px solid #c9c9c9;
+  border-radius: 50px 50px 10px 80px;
+  width: 180px;
+  height: 80px;
+  padding: 20px;
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  overflow: hidden;
+  animation: salameche-text2 3.5s ease 15s 1 normal forwards;
+  transform: translateX(-1000px);
+}
+@keyframes salameche-text2 {
+  0% {
+    transform: translateX(-1000px);
+  }
+  15% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1000px);
+  }
+}
+.salameche-text2{
+  font-size: 1.6em;
+  font-weight: bolder;
+}
+
+/* -- Sacha says GOTCHA ! -- */
+
+.sacha-text-container3{
+  border: 2px solid #c9c9c9;
+  border-radius: 50px 50px 80px 10px;
+  width: 230px;
+  height: 120px;
+  padding: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  overflow: hidden;
+  animation: sacha-text3 1.5s ease 24.5s 1 normal forwards;
+  transform: translateY(1000px);
+}
+@keyframes sacha-text3 {
+  0% {
+    transform: translateY(-1000px);
+  }
+  15% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1000px);
+  }
+}
+.sacha-text3{
+  font-size: 1.5em;
+  font-weight: bolder;
+}

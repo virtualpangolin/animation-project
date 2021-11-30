@@ -1,0 +1,25 @@
+*{
+    font-family: 'Indie Flower', cursive;
+    box-sizing: border-box;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+h2{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* -- wrapper -- */
+
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
