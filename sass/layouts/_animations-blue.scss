@@ -1,53 +1,6 @@
-
-/* -- salamoche all animations -- */
-
 .img-squirtle{
     width: 250px;
     height: 250px;
     animation: squirtle 11s ease 7.8s 1 normal forwards;
     transform: scale(0);
-  }
-  @keyframes squirtle {
-    0% {
-      transform: scale(0) translateX(0);
-    }
-    5% {
-      transform: scale(1);
-    }
-    40% {
-      transform: scale(1)  translateX(0);
-    }
-    45% {
-      transform: scale(1) translateX(-50px) rotate(-15deg);
-    }
-    50% {
-      transform: scale(1) translateX(-100px) rotate(12deg);
-    }
-    55% {
-      transform: scale(1) translateX(-140px) rotate(-13deg);
-    }
-    60% {
-      transform: scale(1) translateX(-190px) rotate(12deg);
-    }
-    65% {
-      transform: scale(1) translateX(-230px) rotate(-13deg);
-    }
-    70% {
-      transform: scale(1) translateX(-280px) rotate(12deg);
-    }
-    75% {
-      transform: scale(1) translateX(-310px) rotate(-15deg);
-    }
-    80% {
-      transform: scale(1) translateX(-350px) rotate(15deg);
-    }
-    83% {
-      transform: scale(1) translateX(-350px) rotate(0deg);
-    }
-    90% {
-      transform: scale(1) translateX(-350px);
-    }
-    100% {
-      transform: scale(1) translateX(-350px);
-    }
-  }
+}

@@ -47,10 +47,9 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
-    animation: logo-anim 2.5s ease-in-out 1s 1 normal forwards, rainbow 1200ms ease-in-out 3.3s infinite normal forwards,;
+    animation: logo-anim 2.5s ease-in-out 1s 1 normal forwards, rainbow 1200ms ease-in-out 3.3s infinite normal forwards;
     transform: scale(0);
 }
-
 
 /* -- logo all animations -- */
 
@@ -223,20 +222,136 @@ header{
     width: 100%;
     //transition: width .3s;
 }
+
+/* -- animation 1 -- */
+
 .poke-list--color1{
     background: -webkit-linear-gradient(360deg, $color-purple, $color-dark-red, $color-red, $color-orange, $color-yellow);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.poke-list--color1:hover{
+        animation: anim-1 600ms ease-in-out normal infinite forwards;
+        transform: scale(1);
+}
+@keyframes anim-1 {
+    0%,
+    100%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, $color-purple, $color-dark-red, $color-red, $color-orange, $color-yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    20% {
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, $color-yellow, $color-purple, $color-dark-red, $color-red, $color-orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    40% {
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, $color-orange, $color-yellow, $color-purple, $color-dark-red, $color-red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    60% {
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, $color-red, $color-orange, $color-yellow, $color-purple, $color-dark-red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    80% {
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, $color-dark-red, $color-red, $color-orange, $color-yellow, $color-purple);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
 .poke-list--color2{
     background: -webkit-linear-gradient(360deg, $color-darkest-blue, $color-dark-blue, $color-blue, $color-light-blue, $color-lightest-blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.poke-list--color2:hover{
+    animation: anim-2 600ms ease-in-out normal infinite forwards;
+    transform: scale(1);
+}
+@keyframes anim-2 {
+    0%,
+    100%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, $color-darkest-blue, $color-dark-blue, $color-blue, $color-light-blue, $color-lightest-blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    20% {
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, $color-lightest-blue, $color-darkest-blue, $color-dark-blue, $color-blue, $color-light-blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    40% {
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, $color-light-blue, $color-lightest-blue, $color-darkest-blue, $color-dark-blue, $color-blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    60% {
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, $color-blue, $color-light-blue, $color-lightest-blue, $color-darkest-blue, $color-dark-blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    80% {
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, $color-dark-blue, $color-blue, $color-light-blue, $color-lightest-blue, $color-darkest-blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
 .poke-list--color3{
     background: -webkit-linear-gradient(360deg, $color-darkest-green, $color-dark-green, $color-green, $color-light-green, $color-lightest-green);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.poke-list--color3:hover{
+    animation: anim-3 600ms ease-in-out normal infinite forwards;
+    transform: scale(1);
+}
+@keyframes anim-3 {
+    0%,
+    100%{
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, $color-darkest-green, $color-dark-green, $color-green, $color-light-green, $color-lightest-green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    20% {
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, $color-lightest-green, $color-darkest-green, $color-dark-green, $color-green, $color-light-green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    40% {
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, $color-light-green, $color-lightest-green, $color-darkest-green, $color-dark-green, $color-green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    60% {
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, $color-green, $color-light-green, $color-lightest-green, $color-darkest-green, $color-dark-green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    80% {
+        transform: scale(1);
+        background: -webkit-linear-gradient(360deg, $color-dark-green, $color-green, $color-light-green, $color-lightest-green, $color-darkest-green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 /* -- nav appearance animation -- */
@@ -403,6 +518,7 @@ header{
         transform: scale(1);
     }
 }
+
 /* -- pimkachu text -- */
 
 .pikachu-text-container{

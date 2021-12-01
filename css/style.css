@@ -29,7 +29,6 @@ h2 {
   padding: 0 50px;
 }
 
-/* -- salamoche all animations -- */
 .img-squirtle {
   width: 250px;
   height: 250px;
@@ -37,50 +36,6 @@ h2 {
   transform: scale(0);
 }
 
-@keyframes squirtle {
-  0% {
-    transform: scale(0) translateX(0);
-  }
-  5% {
-    transform: scale(1);
-  }
-  40% {
-    transform: scale(1) translateX(0);
-  }
-  45% {
-    transform: scale(1) translateX(-50px) rotate(-15deg);
-  }
-  50% {
-    transform: scale(1) translateX(-100px) rotate(12deg);
-  }
-  55% {
-    transform: scale(1) translateX(-140px) rotate(-13deg);
-  }
-  60% {
-    transform: scale(1) translateX(-190px) rotate(12deg);
-  }
-  65% {
-    transform: scale(1) translateX(-230px) rotate(-13deg);
-  }
-  70% {
-    transform: scale(1) translateX(-280px) rotate(12deg);
-  }
-  75% {
-    transform: scale(1) translateX(-310px) rotate(-15deg);
-  }
-  80% {
-    transform: scale(1) translateX(-350px) rotate(15deg);
-  }
-  83% {
-    transform: scale(1) translateX(-350px) rotate(0deg);
-  }
-  90% {
-    transform: scale(1) translateX(-350px);
-  }
-  100% {
-    transform: scale(1) translateX(-350px);
-  }
-}
 .img-bulbasaur {
   width: 250px;
   height: 250px;
@@ -88,50 +43,6 @@ h2 {
   transform: scale(0);
 }
 
-@keyframes bulbasaur {
-  0% {
-    transform: scale(0) translateX(0);
-  }
-  5% {
-    transform: scale(1);
-  }
-  40% {
-    transform: scale(1) translateX(0);
-  }
-  45% {
-    transform: scale(1) translateX(-50px) rotate(-15deg);
-  }
-  50% {
-    transform: scale(1) translateX(-100px) rotate(12deg);
-  }
-  55% {
-    transform: scale(1) translateX(-140px) rotate(-13deg);
-  }
-  60% {
-    transform: scale(1) translateX(-190px) rotate(12deg);
-  }
-  65% {
-    transform: scale(1) translateX(-230px) rotate(-13deg);
-  }
-  70% {
-    transform: scale(1) translateX(-280px) rotate(12deg);
-  }
-  75% {
-    transform: scale(1) translateX(-310px) rotate(-15deg);
-  }
-  80% {
-    transform: scale(1) translateX(-350px) rotate(15deg);
-  }
-  83% {
-    transform: scale(1) translateX(-350px) rotate(0deg);
-  }
-  90% {
-    transform: scale(1) translateX(-350px);
-  }
-  100% {
-    transform: scale(1) translateX(-350px);
-  }
-}
 /*@keyframes pokeball {
   0%,
   100% {
@@ -1158,24 +1069,136 @@ header {
   width: 100%;
 }
 
+/* -- animation 1 -- */
 .poke-list--color1 {
   background: -webkit-linear-gradient(360deg, #571c4d, #9e2155, #cc1b41, #ff5e00, #ffc400);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.poke-list--color1:hover {
+  animation: anim-1 600ms ease-in-out normal infinite forwards;
+  transform: scale(1);
+}
+
+@keyframes anim-1 {
+  0%, 100% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #571c4d, #9e2155, #cc1b41, #ff5e00, #ffc400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  20% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #ffc400, #571c4d, #9e2155, #cc1b41, #ff5e00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  40% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #ff5e00, #ffc400, #571c4d, #9e2155, #cc1b41);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #cc1b41, #ff5e00, #ffc400, #571c4d, #9e2155);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  80% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #9e2155, #cc1b41, #ff5e00, #ffc400, #571c4d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 .poke-list--color2 {
   background: -webkit-linear-gradient(360deg, #162263, #122bb5, #0e7ae6, #07aef5, #03f7ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.poke-list--color2:hover {
+  animation: anim-2 600ms ease-in-out normal infinite forwards;
+  transform: scale(1);
+}
+
+@keyframes anim-2 {
+  0%, 100% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #162263, #122bb5, #0e7ae6, #07aef5, #03f7ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  20% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #03f7ff, #162263, #122bb5, #0e7ae6, #07aef5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  40% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #07aef5, #03f7ff, #162263, #122bb5, #0e7ae6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #0e7ae6, #07aef5, #03f7ff, #162263, #122bb5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  80% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #122bb5, #0e7ae6, #07aef5, #03f7ff, #162263);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 .poke-list--color3 {
   background: -webkit-linear-gradient(360deg, #1b4014, #2d6e22, #38a125, #23ba23, #00ff00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.poke-list--color3:hover {
+  animation: anim-3 600ms ease-in-out normal infinite forwards;
+  transform: scale(1);
+}
+
+@keyframes anim-3 {
+  0%, 100% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #1b4014, #2d6e22, #38a125, #23ba23, #00ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  20% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #00ff00, #1b4014, #2d6e22, #38a125, #23ba23);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  40% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #23ba23, #00ff00, #1b4014, #2d6e22, #38a125);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #38a125, #23ba23, #00ff00, #1b4014, #2d6e22);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  80% {
+    transform: scale(1);
+    background: -webkit-linear-gradient(360deg, #2d6e22, #38a125, #23ba23, #00ff00, #1b4014);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 /* -- nav appearance animation -- */
 .anim-1 {
   animation: anim1 500ms 3000ms forwards;
