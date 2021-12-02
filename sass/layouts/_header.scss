@@ -422,7 +422,7 @@ header{
     }
 }
 
-/* -- pikachu appearance -- */
+/* -- pikachu appearance / dissapear -- */
 
 .img-pikachu{
     width: 250px;
@@ -431,7 +431,7 @@ header{
     position: absolute;
     bottom: 20px;
     left: 100px;
-    animation: anim-pika 800ms ease-in-out 4.7s 1 normal forwards;
+    animation: anim-pika 800ms ease-in-out 4.7s 1 normal forwards, anim-pika2 800ms linear 8850ms 1 normal forwards;
     transform: translateX(-1000px);
 }
 @keyframes anim-pika {
@@ -441,18 +441,26 @@ header{
     100% {
       transform: translateX(0);
     }
-  }
+}
+@keyframes anim-pika2 {
+    0% {
+      transform: translateX(0) translateY(0) rotate(0);
+    }
+    100% {
+      transform: translateX(-600px) translateY(-600px) rotate(720deg);
+    }
+}
 
-/* -- anime girl appearance -- */
+/* -- anime girl appearance / dissapear -- */
 
 .img-anime-girl{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     position: absolute;
     bottom: 0;
     right: 100px;
-    animation: anim-girl 800ms ease-in-out 4.5s 1 normal forwards;
+    animation: anim-girl 800ms ease-in-out 4.5s 1 normal forwards, anim-girl2 700ms linear 9800ms 1 normal forwards;
     transform: translateX(1000px);
 }
 @keyframes anim-girl {
@@ -463,8 +471,16 @@ header{
       transform: translateX(0);
     }
 }
+@keyframes anim-girl2 {
+    0% {
+      transform: translateX(0) translateY(0) rotate(0);
+    }
+    100% {
+      transform: translateX(600px) translateY(-600px) rotate(720deg);
+    }
+}
 
-/* -- diglett appearance -- */
+/* -- diglett appearance / dissapear -- */
 
 .img-diglett{
     width: 200px;
@@ -473,7 +489,7 @@ header{
     position: absolute;
     bottom: 0;
     right: 600px;
-    animation: diglett 700ms linear 5.5s 1 normal forwards;
+    animation: diglett 300ms linear 5.5s 1 normal forwards, diglett2 700ms linear 9400ms 1 normal forwards;
     transform: translateY(200px);
 }
 @keyframes diglett {
@@ -484,14 +500,22 @@ header{
       transform: translateY(20px);
     }
 }
+@keyframes diglett2 {
+    0% {
+      transform: translateX(0) translateY(0) rotate(0);
+    }
+    100% {
+      transform: translateX(200px) translateY(-600px) rotate(720deg);
+    }
+}
 
-/* -- anime girl text -- */
+/* -- anime girl text appear / dissapear -- */
 
 .anime-text-container{
     position: absolute;
     top: 150px;
     right: 400px;
-    animation: anime-hello 2000ms ease-in-out 4.5s 1 normal forwards;
+    animation: anime-hello 2000ms ease-in-out 4.5s 1 normal forwards, anime-hello2 200ms ease-in-out 9s 1 normal forwards;
     transform: scale(0);
 }
 .anime-text{
@@ -518,14 +542,21 @@ header{
         transform: scale(1);
     }
 }
-
-/* -- pimkachu text -- */
+@keyframes anime-hello2{
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+/* -- pimkachu text appear / dissapear -- */
 
 .pikachu-text-container{
     position: absolute;
     top: 200px;
     left: -50px;
-    animation: pikachu 2000ms ease-in-out 5s 1 normal forwards, pika-text 300ms ease-in-out 1s infinite normal forwards;
+    animation: pikachu 2000ms ease-in-out 5s 1 normal forwards, pikachu2 200ms ease-in-out 9s 1 normal forwards;
     transform: scale(0);
 }
 .pikachu-text{
@@ -550,5 +581,108 @@ header{
     }
     100% {
         transform: scale(1);
+    }
+}
+@keyframes pikachu2{
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+/* -- ball attack -- */
+
+.img-bowling-ball{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    animation: ball 2000ms linear 8.5s 1 normal forwards, ball2 1000ms linear 10.5s 1 normal forwards;
+    transform: translateX(-500px) rotate(0) scale(1);
+}
+
+@keyframes ball{
+    0% {
+        transform: translateX(-500px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(1700px) rotate(1080deg);
+    }
+}
+
+@keyframes ball2{
+    0% {
+        transform: scale(1);
+    }
+    1% {
+        transform: translateX(500px) scale(0);
+    }
+    100% {
+        transform: translateX(500px) scale(0);
+    }
+}
+
+/* -- tarzan swing -- */
+
+.img-tarzan{
+    width: 200px;
+    height: 450px;
+    position: absolute;
+    top: -20px;
+    left: 600px;
+    animation: swing 4000ms ease-in-out 10s 1 normal forwards;
+    transform: rotate(180deg);
+    transform-origin: top;
+}
+@keyframes swing{
+    0% {
+        transform: rotate(180deg);
+        transform-origin: top;
+    }
+    100% {
+        transform: rotate(-180deg);
+        transform-origin: top;
+    }
+}
+
+/* -- anime girl left -- */
+
+.img-girl-left{
+    width: 170px;
+    height: 380px;
+    position: absolute;
+    left: -233px;
+    bottom: 0px;
+    animation: left-girl 1000ms ease-in-out 10.2s 1 normal forwards;
+    transform: translateX(-200px);
+}
+@keyframes left-girl{
+    0% {
+        transform: translateX(-200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* -- anime girl right -- */
+
+.img-girl-right{
+    width: 170px;
+    height: 380px;
+    position: absolute;
+    right: -233px;
+    bottom: 0;
+    animation: right-girl 1000ms ease-in-out 10.2s 1 normal forwards;
+    transform: translateX(200px);
+}
+@keyframes right-girl{
+    0% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
